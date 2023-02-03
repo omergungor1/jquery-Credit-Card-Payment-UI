@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Card Payment</title>
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/051e1720c8.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        -->
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class="container shadow mt-3 mb-2 main">
+        <div class="row main-title pt-3">
+            <h1>Payment Screen</h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="row col-6">
+                <form action="#">
+                    <div class="col-md-12 form-group m-2 mb-4">
+                        <label for="">Name Surname</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name-Surname">
+                        <small class="form-text text-muted">Card owner's name and last name</small>
+                    </div>
+                    <div class="col-md-12 form-group m-2 mb-4">
+                        <label for="">Card number</label>
+                        <input type="text" class="form-control" id="card-number" placeholder="Credit Card Number">
+                        <small class="form-text text-muted">Enter the 16-digit number of the credit card</small>
+                    </div>
+                    <div class="row m-2">
+                        <div class="col-md-4 form-group">
+                            <label for="">Month</label>
+                            <input type="text" class="form-control" id="sktarih-ay" placeholder="Exp. Date - Month">
+                            <small class="form-text text-muted">Credit card expiration date - month</small>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="">Year</label>
+                            <input type="text" class="form-control" id="sktarih-yil" placeholder="Exp. Date - Year">
+                            <small class="form-text text-muted">Credit card expiration date - year</small>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="">Cvv</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="Cvv">
+                            <small class="form-text text-muted">3-digit security code located on the back of the credit
+                                card</small>
+                        </div>
+                        <div class="row mt-3 mb-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Pay by Credit Card</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-6">
+
+                <!-- Card -->
+                <div class="front">
+                    <div class="credit-card-wrap mt-1">
+                        <div class="mk-icon-world-map"></div>
+                        <div class="credit-card-inner">
+                            <header class="header">
+                                <div class="credit-logo">
+                                    <div class="shape"><span class="txt">PP</span></div> <span class="text"
+                                        id="bank"></span>
+                                </div>
+                            </header>
+                            <div class="mk-icon-sim"></div>
+                            <div class="credit-font credit-card-number"></div>
+                            <footer class="footer">
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div class="credit-card-date"><span class="title">Exp.Date<br>Month /
+                                                Year</span><span class="credit-font">
+                                                <span class="skt-ay"></span> / <span class="skt-yil"></span>
+                                            </span></div>
+                                        <div class="credit-font credit-author"><span class="name"></span></div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <i id="brand" style="color: #2790C3;"></i>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="credit-card-wrap mt-1">
+                        <div class="mk-icon-world-map"></div>
+                        <div class="credit-card-inner2">
+                            <div class="band"></div>
+                            <div class="mk-icon-band"></div>
+                            <div class="cvv-place"><span class="cvv"></span></div>
+                            <footer class="footer">
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
